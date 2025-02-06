@@ -13,6 +13,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   end
 end
 vim.opt.rtp:prepend(lazypath)
+vim.g.lazyvim_prettier_needs_config = false
 
 require("lazy").setup({
   spec = {
